@@ -1,0 +1,15 @@
+enable_service nats
+
+NATS_DEST=${NATS_DEST:-/opt/stack/devstack-plugin-nats}
+
+NATS_VERSION=${NATS_VERSION:-v2.8.4}
+NATS_FILE=${NATS_FILE:-nats-server-${NATS_VERSION}-linux-amd64}
+NATS_URL=${NATS_URL:-https://github.com/nats-io/nats-server/releases/download/${NATS_VERSION}/${NATS_FILE}.tar.gz}
+
+#RPC_SERVICE=${RPC_SERVICE:-nats}
+#RPC_HOST=${RPC_HOST:-$SERVICE_HOST}
+#RPC_PORT=${RPC_PORT:-4222}
+
+#NOTIFY_SERVICE=${NOTIFY_SERVICE:-rabbit}
+#NOTIFY_HOST=${NOTIFY_HOST:-$SERVICE_HOST}
+#NOTIFY_PORT=${NOTIFY_PORT:-4222}
